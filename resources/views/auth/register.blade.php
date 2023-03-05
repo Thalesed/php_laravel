@@ -44,12 +44,14 @@
                     </x-jet-label>
                 </div>
             @endif
+		
 
+		<input type="radio" id="cliente" name="tipo"><label for="cliente">cliente</label></input>
+		<input type="radio" id="fornecedor" name="tipo"><label for="fornecedor">fornecedor</label></input>
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
-
                 <button class="btn btn-primary">
                     {{ __('Register') }}
                 <button>
